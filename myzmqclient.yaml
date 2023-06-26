@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myzmqclient
+spec:
+  selector:
+    matchLabels:
+      run: myzmqclient
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: myzmqclient
+    spec:
+      containers:
+      - name: myzmqclient
+        image: hfarkhari/client_server_zmq:client_5.0
+        ports:
+        - containerPort: 5555
+
+
+
+
