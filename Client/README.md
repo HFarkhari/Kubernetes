@@ -33,13 +33,13 @@ Alternatively, if you prefer to build the Docker images yourself, you can use th
 2. Build the Docker image for the client:
 
    ```shell
-   docker build -t client_server_zmq:client -f Dockerfile.client .
+   docker build -t client_server_zmq:client  .
    ```
 
 3. Build the Docker image for the server:
 
    ```shell
-   docker build -t client_server_zmq:server -f Dockerfile.server .
+   docker build -t client_server_zmq:server  .
    ```
 
 4. Once the images are built successfully, you can use them as per your requirements.
